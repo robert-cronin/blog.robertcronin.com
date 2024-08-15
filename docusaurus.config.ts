@@ -1,95 +1,85 @@
-import {themes as prismThemes} from 'prism-react-renderer';
-import type {Config} from '@docusaurus/types';
-import type * as Preset from '@docusaurus/preset-classic';
+import { themes as prismThemes } from "prism-react-renderer";
+import type { Config } from "@docusaurus/types";
+import type * as Preset from "@docusaurus/preset-classic";
 
 const config: Config = {
-  title: 'Robert Cronin',
-  tagline: 'Senior Software Engineer',
-  favicon: 'img/favicon.ico',
+  title: "Robert Cronin",
+  tagline: "Senior Software Engineer",
+  favicon: "img/favicon.ico",
 
-  // Set the production url of your site here
-  url: 'https://blog.robertcronin.com',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  url: "https://blog.robertcronin.com",
+  baseUrl: "/",
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'robert-cronin', // Usually your GitHub org/user name.
-  projectName: 'robertcronin.com', // Usually your repo name.
+  organizationName: "robert-cronin",
+  projectName: "robertcronin.com",
 
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: "en",
+    locales: ["en"],
   },
 
   presets: [
     [
-      'classic',
+      "classic",
       {
+        docs: false,
         blog: {
-          routeBasePath: '/',
+          routeBasePath: "/",
           showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/robert-cronin/robertcronin.com/edit/main/',
+            "https://github.com/robert-cronin/robertcronin.com/edit/main/",
         },
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: "./src/css/custom.css",
         },
       } satisfies Preset.Options,
     ],
   ],
 
   themeConfig: {
-    // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: "img/docusaurus-social-card.jpg",
     colorMode: {
-      defaultMode: 'dark',
+      defaultMode: "dark",
     },
     navbar: {
-      title: 'Robert Cronin',
+      title: "Robert Cronin",
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.png',
+        alt: "My Site Logo",
+        src: "img/logo.png",
       },
       items: [
         {
-          href: 'https://github.com/robert-cronin',
-          label: 'GitHub',
-          position: 'right',
+          href: "https://github.com/robert-cronin",
+          label: "GitHub",
+          position: "right",
         },
       ],
     },
     footer: {
-      style: 'dark',
+      style: "dark",
       links: [
         {
-          title: 'Links',
+          title: "Links",
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/users/7644072/robbie-cronin',
+              label: "Stack Overflow",
+              href: "https://stackoverflow.com/users/7644072/robbie-cronin",
             },
             {
-              label: 'Code Wars',
-              href: 'https://www.codewars.com/users/robert-cronin',
+              label: "Code Wars",
+              href: "https://www.codewars.com/users/robert-cronin",
             },
           ],
         },
         {
-          title: 'More',
+          title: "More",
           items: [
             {
-              label: 'GitHub',
-              href: 'https://github.com/robert-cronin/robertcronin.com',
+              label: "GitHub",
+              href: "https://github.com/robert-cronin/robertcronin.com",
             },
           ],
         },

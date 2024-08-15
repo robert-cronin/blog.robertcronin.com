@@ -9,11 +9,10 @@ RUN npm install --no-cache
 
 COPY . .
 
-RUN ["npm", "run", "build"]
+RUN npm run build:k8s
 
 FROM --platform=linux/arm64 nginx:alpine as production
 
 COPY --from=build /app/build /usr/share/nginx/html
 
 EXPOSE 80
-
