@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "coder.css",
-	"sourceRoot": "/home/robbie/go/src/github.com/robert-cronin/blog.robertcronin.com",
+	"sourceRoot": "/home/rob/Documents/github/blog.robertcronin.com",
 	"sources": [
 		"themes/hugo-coder/assets/scss/coder.scss",
 		"themes/hugo-coder/assets/scss/css/normalize.css",
